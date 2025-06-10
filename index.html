@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!-- Metatags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="...">
+        <meta name="keywords" content="...">
+        <meta name="author" content="Daniel Mazzeu">
+        <meta name="robots" content="index, follow">
+
+        <!-- Social Metatags -->
+        <meta property="og:title" content="...">
+        <meta property="og:description" content="...">
+        <meta property="og:image" content="...">
+        <meta property="og:url" content="...">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="...">
+        <meta property="og:locale" content="pt_BR">
+
+        <!-- Twitter / X Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="...">
+        <meta name="twitter:description" content="...">
+        <meta name="twitter:image" content="..."> <meta name="twitter:site" content="@l009ig"> <link rel="icon" href="images/favicon.ico" type="image/x-icon" title="Favicon da L009"> 
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" title="...">
+
+        <!-- Title -->
+        <title>...</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/typography.css">
+        <link rel="stylesheet" href="styles/grid.css">
+        <link rel="stylesheet" href="styles/container.css">
+        <link rel="stylesheet" href="styles/card.css">
+        <link rel="stylesheet" href="styles/field.css">
+        <link rel="stylesheet" href="styles/button.css">
+
+        <!-- Scripts -->
+        <script defer src="scripts/counter.js"></script>
+    </head>
+    <body>
+
+        <!-- Main -->
+        <main class="container container-form">
+            <form class="card"> <!-- Schedule Form -->
+                <div class="field">
+                    <label>Código de Empresa</label>
+                    <div class="grid g-2">
+                        <input type="text" placeholder="000" maxlength="3" class="code-mask">
+                        <input type="text" placeholder="Empresa" readonly>
+                    </div>
+                    <small>Código fornecido pela empresa prestadora.</small>
+                </div>
+                <div class="field">
+                    <label>Nome completo</label>
+                    <input id="form-name" type="text" placeholder="Nome completo" maxlength="50">
+                    <small class="counter" data-ref="form-name"></small>
+                </div>
+                <div class="field">
+                    <label>Telefone</label>
+                    <input type="text" placeholder="(00) 90000-0000" class="phone-mask">
+                    <small>Importante que seja um número verdadeiro, para que possamos entrar em contato e para recebimento do SMS de confirmação do agendamento.</small>
+                </div>
+                <div class="grid g-2">
+                    <div class="field">
+                        <label>Data</label>
+                        <input type="date">
+                    </div>
+                    <div class="field">
+                        <label>Horário</label>
+                        <input type="time">
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Profissional</label>
+                    <select>
+                        <option value="null" disabled selected>Selecionar</option>
+                        <option value="1">Maria Clara</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Descrição do serviço desejado</label>
+                    <textarea id="form-description" placeholder="Descreva o que deseja aqui" maxlength="500"></textarea>
+                    <small class="counter" data-ref="form-description"></small>
+                </div>
+                <button type="submit">Agendar</button>
+            </form>
+        </main>
+
+    </body>
+</html>

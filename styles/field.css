@@ -1,0 +1,36 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.field input,
+.field select,
+.field textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.field input:not(input[type=date]) { text-transform: capitalize; }
+
+.field textarea {
+    resize: none;
+    height: 130px;
+}
+
+.field select { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.field input:read-only { 
+    cursor: default;
+    background-color: #f0f0f0;
+}
